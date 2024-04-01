@@ -6,6 +6,12 @@ import {
 } from "react-router-dom";
 
 import { MenuCategory } from "./components/MenuCategory.jsx";
+import CategoryAgrimensura from "./components/categorias/CategoryAgrimensura.jsx";
+import CategoryAlmacen from "./components/categorias/CategoryAlmacen.jsx";
+import CategoryGestorPersonal from "./components/categorias/CategoryGestorPersonal.jsx";
+import CategoryInmobiliaria from "./components/categorias/CategoryInmobiliaria.jsx";
+import CategoryMultimedia from "./components/categorias/CategoryMultimedia.jsx";
+
 
 const Categoria1 = () => <div>Contenido Categoría 1</div>;
 const Categoria2 = () => <div>Contenido Categoría 2</div>;
@@ -20,12 +26,11 @@ export const App = () => {
       <MenuCategory />
       <Routes>
         <Route path="/" element={<Categoria1 />} />
-        <Route path="/categoria1" element={<Categoria1 />} />
-        <Route path="/categoria2" element={<Categoria2 />} />
-        <Route path="/categoria3" element={<Categoria3 />} />
-        <Route path="/categoria4" element={<Categoria4 />} />
-        <Route path="/categoria5" element={<Categoria5 />} />
-        <Route path="/categoria6" element={<Categoria6 />} />
+        <Route path="/category/agrimensura" element={<CategoryAgrimensura />} />
+        <Route path="/category/almacen" element={<CategoryAlmacen />} />
+        <Route path="/category/gestorpersonal" element={<CategoryGestorPersonal />} />
+        <Route path="/category/inmobiliaria" element={<CategoryInmobiliaria />} />
+        <Route path="/category/multimedia" element={<CategoryMultimedia />} />
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
     </Router>

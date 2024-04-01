@@ -13,7 +13,7 @@ const CategoryAgrimensura = () => {
   };
 
   return (
-    <div style={{ width: 500 }}>
+    <div style={{ width: "90%", margin:"0 auto"}}>
       <Form form={form} onFinish={onFinish} layout="vertical">
         <Form.Item name="digitalizado_croquis" label="Digitalizado/Croquis">
           <Input />
