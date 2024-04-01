@@ -8,6 +8,7 @@ export const MenuCategory = () => {
   const handleClick = () => {
     setIsActive(!isActive);
   };
+  
   return (
     <>
       <button className="MenuCategory-Button" onClick={handleClick}>X</button>
